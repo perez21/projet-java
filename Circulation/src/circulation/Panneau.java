@@ -10,5 +10,5 @@ package circulation;
  * @author PerezHack
  */
 public class Panneau {
-    
+
 }
