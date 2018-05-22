@@ -46,14 +46,19 @@ public class Chemin {
     public void setPanneau(Panneau[] panneau) {
         this.panneau = panneau;
     }
-    public Chemin(){
-        super();
-    }
+    
 
     public Chemin(int id, String position, String nomChemin) {
         this.id = id;
         this.position = position;
         this.nomChemin = nomChemin;
     }
+
+    @Override
+    public String toString() {
+        return "Chemin{" + "id=" + id + ", position=" + position + ", nomChemin=" + nomChemin + ", panneau=" + panneau + '}';
+    }
+    
+    
     
 }
