@@ -17,7 +17,21 @@ public class Circulation {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Welcome ");
+       
+        PassageVehicule();
+    }
+    
+    public static void PassageVehicule(){
+       System.out.println("passage de voiture en cours...");
+        //ici on vas ecrire la methode que nous allons appeler chaque fois que nous voulons afficher le passage de vehicule
+        
+    
+    }
+    
+    public static void PassagePieton(){
+    
+        //ici on vas ecrire la methode que nous allons appeler chaquefois que nous voulons afficher le passage des pietons
+        
     }
     
 }
