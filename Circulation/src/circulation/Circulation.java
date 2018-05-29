@@ -61,7 +61,7 @@ public class Circulation {
                    } 
               for (int i=0; i<10; i++){
                   System.out.println("Passage des vehicules du cote Est et Ouest");
-                  System.out.println("Passage des piétons du cote Est et Ouest");
+                  System.out.println("Passage des piétons du cote Nord et Sud");
                   try {
                       Thread.sleep(3000);
                   } catch (InterruptedException ex) {
