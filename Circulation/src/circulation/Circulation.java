@@ -23,8 +23,8 @@ public class Circulation {
      
 //Creation d'un feu
         Feu tabfeu[] = new Feu[3];
-        tabfeu[0]= new Feu("Rouge",false);
-        tabfeu[1]= new Feu("Vert",true);
+        tabfeu[0]= new Feu("Vert",true);
+        tabfeu[1]= new Feu("Vert",false);
         tabfeu[2]= new Feu("Jaune",false);
         
 
@@ -43,7 +43,7 @@ public class Circulation {
               if (tabfeu[0].isEtat()){
                   System.out.println("Passage des vehicules du cote Nord et sud");
                   try {
-                      Thread.sleep(60000);
+                      Thread.sleep(700);
                   } catch (InterruptedException ex) {
                      System.out.println("Erreur de l'application");
                   }
