@@ -11,9 +11,8 @@ package circulation;
  */
 public class Chemin {
     private int id;
-    private String position;
     private String nomChemin;
-    private Panneau panneau[];
+    private Panneau panneau;
 
     public int getId() {
         return id;
@@ -23,13 +22,6 @@ public class Chemin {
         this.id = id;
     }
 
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
 
     public String getNomChemin() {
         return nomChemin;
@@ -39,24 +31,24 @@ public class Chemin {
         this.nomChemin = nomChemin;
     }
 
-    public Panneau[] getPanneau() {
+    public Panneau getPanneau() {
         return panneau;
     }
 
-    public void setPanneau(Panneau[] panneau) {
+    public void setPanneau(Panneau panneau) {
         this.panneau = panneau;
     }
     
 
-    public Chemin(int id, String position, String nomChemin) {
-        this.id = id;
-        this.position = position;
+    public Chemin( String nomChemin,Panneau panneau) {
+        this.id += 1;
         this.nomChemin = nomChemin;
+        this.panneau=panneau;
     }
 
     @Override
     public String toString() {
-        return "Chemin{" + "id=" + id + ", position=" + position + ", nomChemin=" + nomChemin + ", panneau=" + panneau + '}';
+        return "Chemin{" + "id=" + id + ", nomChemin=" + nomChemin + ", panneau=" + panneau + '}';
     }
     
     
