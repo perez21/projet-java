@@ -18,8 +18,8 @@ public class Panneau {
     public Panneau() {
     }
 
-    public Panneau(int id, String nom, Feu[] feu) {
-        this.id = id;
+    public Panneau(String nom, Feu[] feu) {
+        this.id += 1;
         this.nom = nom;
         this.feu = feu;
     }
