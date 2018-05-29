@@ -17,8 +17,8 @@ public class Feu {
     
     public Feu(){}
     
-    public Feu(int id, String couleur, boolean etat){
-        this.id=id;
+    public Feu(String couleur, boolean etat){
+        this.id +=1;
         this.couleur=couleur;
         this.etat=etat;
         
