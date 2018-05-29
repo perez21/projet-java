@@ -1,6 +1,8 @@
 package circulation;
 
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -40,6 +42,11 @@ public class Circulation {
           if (tabfeu[0].getCouleur()=="Vert"){
               if (tabfeu[0].isEtat()){
                   System.out.println("Passage des vehicules du cote Nord et sud");
+                  try {
+                      Thread.sleep(60000);
+                  } catch (InterruptedException ex) {
+                     System.out.println("Erreur de l'application");
+                  }
               }
           }
       } 
