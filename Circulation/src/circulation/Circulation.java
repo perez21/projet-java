@@ -41,9 +41,29 @@ public class Circulation {
       if (carrefour[0].getNom()=="Nord"){
           if (tabfeu[0].getCouleur()=="Vert"){
               if (tabfeu[0].isEtat()){
+                  for (int i=0; i<10; i++){
                   System.out.println("Passage des vehicules du cote Nord et sud");
+                  System.out.println("Passage des piétons du cote Est et Ouest");
                   try {
-                      Thread.sleep(700);
+                      Thread.sleep(3000);
+                  } catch (InterruptedException ex) {
+                     System.out.println("Erreur de l'application");
+                  }
+              }
+             for (int j=0; j<4; j++){
+                  System.out.println("Attention ralentir du cote Nord et sud");
+                  System.out.println("Stop piétons du cote Est et Ouest");
+                  try {
+                      Thread.sleep(8000);
+                  } catch (InterruptedException ex) {
+                     System.out.println("Erreur de l'application");
+             }
+                   } 
+              for (int i=0; i<10; i++){
+                  System.out.println("Passage des vehicules du cote Est et Ouest");
+                  System.out.println("Passage des piétons du cote Est et Ouest");
+                  try {
+                      Thread.sleep(3000);
                   } catch (InterruptedException ex) {
                      System.out.println("Erreur de l'application");
                   }
@@ -53,4 +73,5 @@ public class Circulation {
 
     }
     
+}
 }
